@@ -26,7 +26,8 @@
     color: #d9534f;
 }
 
-#cm-live-search-box .search_result_image {
+#cm-live-search-box .search_result_image,
+#cm-live-search-box .search_result_image * {
     max-width: 50px;
     height: 50px;
 }
