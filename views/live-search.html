@@ -14,7 +14,7 @@
     </div>
     <div class="search_result_info">
         <div class="search_result_title">
-            <a href="{{ aSearchResult.item_link }}" title="{{ aSearchResult.item_title|striptags }}">{{ aSearchResult.item_title|striptags|slice(0, 50) ~ '...'  }}</a>
+            <a href="{{ aSearchResult.item_link }}" title="{{ aSearchResult.item_title|striptags }}">{{ aSearchResult.item_title|striptags|slice(0, 50) }}{% if aSearchResult.item_title|length > 50 %}...{% endif %}</a>
         </div>
         <div class="extra_info">
             <ul class="extra_info_middot"><li>{{ aSearchResult.item_name }}</li><li>&middot;</li></ul>
