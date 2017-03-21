@@ -1,0 +1,30 @@
+{
+    "id": "CM_LiveSearch",
+    "alias": "livesearch",
+    "name": "Live Search",
+    "version": "1.0.0",
+    "vendor": "<a href=\"//codemake.org\" target=\"_blank\">CodeMake.Org</a> - See all our products <a href=\"//store.phpfox.com/techie/u/ecodemaster\" target=_new>HERE</a> - contact us at: support@codemake.org",
+    "settings": {
+        "cm_live_search_enabled": {
+            "info": "Live Search App Enabled",
+            "type": "input:radio",
+            "value": 1,
+            "js_variable": true
+        }
+    },
+    "component" : {
+        "block" : {
+            "live-search" : ""
+        }
+    },
+    "component_block" : {
+        "Live Search" : {
+            "type_id" : "0",
+            "m_connection" : "",
+            "component" : "live-search",
+            "location" : "7",
+            "is_active" : "1",
+            "ordering" : "3"
+        }
+    }
+}

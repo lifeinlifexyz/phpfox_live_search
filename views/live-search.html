@@ -1,0 +1,27 @@
+
+{% for aSearchResult in aSearchResults %}
+<div class="search_result">
+    <div class="search_result_image">
+        {%  if aSearchResult.item_display_photo %}
+            <a href="{{ aSearchResult.item_link }}">{{ aSearchResult.item_display_photo }}</a>
+        {% else %}
+            {% if aSearchResult.profile_image %}
+                {{ avatar(aSearchResult.profile_image, '_50_square', 50, 50) }}
+            {% else %}
+                {{ avatar(aSearchResult, '_50_square', 50, 50) }}
+            {% endif %}
+        {% endif %}
+    </div>
+    <div class="search_result_info">
+        <div class="search_result_title">
+            <a href="{{ aSearchResult.item_link }}" title="{{ aSearchResult.item_title|striptags }}">{{ aSearchResult.item_title|striptags }}</a>
+        </div>
+        <div class="extra_info">
+            <ul class="extra_info_middot"><li>{{ aSearchResult.item_name }}</li><li>&middot;</li></ul>
+        </div>
+    </div>
+</div>
+{% endfor %}
+<div class="text-center">
+    <a href="{{ sUrl }}">{{ _p('View all ') }}({{ aSearchResults|length }})</a>
+</div>
