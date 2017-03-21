@@ -12,11 +12,11 @@ event('app_settings', function ($settings){
     }
 });
 
-if (setting('cm_live_search_enabled')) {
+\Phpfox_Module::instance()->addComponentNames('block', [
+    'livesearch.live-search'    => '\Apps\CM_LiveSearch\Block\Search',
+]);
 
-    \Phpfox_Module::instance()->addComponentNames('block', [
-        'livesearch.live-search'    => '\Apps\CM_LiveSearch\Block\Search',
-    ]);
+if (setting('cm_live_search_enabled')) {
 
     route('live-search', function(){
 
