@@ -1,3 +1,7 @@
+<h2>Paid Support:</h2>       
+<p>The phpfox apps and themes by codemake are provided under the MIT license with no commercial support or liability. 
+<a href="mailto:phpfox@lifeinlife.xyz">phpfox@lifeinlife.xyz</a> also provides commercial support and professional customisation services.</p>
+
 <h2>PHPFox Live Search:</h2>
 
 Live search is a search app for PHPFox global search that returns results as the user types for what they are looking. Supports all apps which has Global Search callback. The app working on mobile version too.
